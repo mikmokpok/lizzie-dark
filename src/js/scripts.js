@@ -91,7 +91,7 @@
       .then(res => res.json())
       .then(data => {
         alert(data.msg);
-        window.location.reload();
+         if(data.success) window.location.reload();
       });
   });
 })();
