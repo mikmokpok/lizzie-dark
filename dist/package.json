@@ -1,0 +1,31 @@
+{
+  "name": "lizzie-dark",
+  "version": "1.0.0",
+  "description": "Kennel website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "lizzie-dark"
+  },
+  "keywords": [
+    "dogs"
+  ],
+  "author": "Miro",
+  "license": "ISC",
+  "devDependencies": {
+    "heroku": "^7.50.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "lightgallery.js": "^1.4.0",
+    "nodemailer": "^6.5.0"
+  }
+}
