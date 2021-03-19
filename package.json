@@ -1,0 +1,14 @@
+{
+  "name": "lizzie-dark",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm install --prefix dist",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

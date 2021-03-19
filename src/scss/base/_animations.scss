@@ -1,0 +1,28 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+[data-inviewport="fade-in"] {
+  transition: 1s;
+  opacity: 0;
+}
+[data-inviewport="fade-in"].is-inViewport {
+  opacity: 1;
+}
+
+[data-inviewport="slide-in"] {
+  transition: 1s;
+  transition-delay: 500ms;
+  margin-left: -1000px;
+}
+[data-inviewport="slide-in"].is-inViewport {
+  margin-left: 0;
+}
+html {
+  scroll-behavior: smooth;
+}

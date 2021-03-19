@@ -1,0 +1,94 @@
+@media(min-width: 600px){
+  .heading{
+    width: 80%;
+  }
+}
+
+
+
+@media (min-width: 840px) {
+  .glide {
+    margin-top: 2rem;
+    &__arrow {
+      display: block !important;
+      color: black !important;
+      border-color: black !important;
+      font-size: 20px;
+      &--left {
+        margin-left: -2%;
+      }
+      &--right {
+        margin-right: -2%;
+      }
+      &:hover {
+        background: white;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+  .hero {
+    animation: fadein 1.5s;
+    &__title{
+      padding-top: 4%;
+      animation: fadein 1.5s;
+      font-size: 10rem;
+    }
+    &__sub{
+      animation:fadein 2s;
+      font-size: 2rem;
+      margin-top: 1%;
+    }
+  }
+  .lila {
+    &__desc {
+      font-size: calc(8px + 6 * ((100vw - 320px) / 680));
+      & .left {
+        position: absolute;
+        width: 30%;
+        top: 40%;
+        left: 5%;
+      }
+      & .right {
+        position: absolute;
+        width: 30%;
+        top: 40%;
+        right: 5%;
+      }
+    }
+    &__img {
+      width: 35%;
+    }
+  }
+  .footer {
+    &__text {
+      margin-left: 10%;
+      font-size: 1.8rem;
+    }
+  }
+  .contact {
+    &__form {
+      width: 30%;
+    }
+  }
+  .heading {
+    word-spacing: 2rem;
+    width: 100%;
+    text-align: center;
+    transform: skew(-15deg);
+    padding: 4rem 0;
+    & .next {
+      margin: 0;
+    }
+  }
+  .dogs {
+    padding: 0 4rem;
+    &__dog {
+      transform: none;
+      background-size: cover;
+      margin-top: 0;
+      &__image {
+        width: 70%;
+      }
+    }
+  }
+}
