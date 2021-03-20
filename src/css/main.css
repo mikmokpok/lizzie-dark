@@ -82,14 +82,6 @@ body {
   opacity: 1;
 }
 
-[data-inviewport="slide-in"] {
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transition-delay: 500ms;
-          transition-delay: 500ms;
-  margin-left: -1000px;
-}
-
 [data-inviewport="slide-in"].is-inViewport {
   margin-left: 0;
 }
@@ -469,9 +461,19 @@ html {
   .heading {
     width: 80%;
   }
+  [data-inviewport="slide-in"] {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 840px) {
+  [data-inviewport="slide-in"] {
+    margin-left: -1300px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transition-delay: 500ms;
+            transition-delay: 500ms;
+  }
   .glide {
     margin-top: 2rem;
   }

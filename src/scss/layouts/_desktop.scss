@@ -2,11 +2,16 @@
   .heading{
     width: 80%;
   }
+  [data-inviewport="slide-in"]{
+    margin-left:0;
+  }
 }
-
-
-
 @media (min-width: 840px) {
+  [data-inviewport="slide-in"]{
+    margin-left:-1300px;
+    transition: 1s;
+    transition-delay: 500ms;
+  }
   .glide {
     margin-top: 2rem;
     &__arrow {

@@ -55,11 +55,6 @@ body {
 [data-inviewport="fade-in"].is-inViewport {
   opacity: 1; }
 
-[data-inviewport="slide-in"] {
-  transition: 1s;
-  transition-delay: 500ms;
-  margin-left: -1000px; }
-
 [data-inviewport="slide-in"].is-inViewport {
   margin-left: 0; }
 
@@ -316,9 +311,15 @@ html {
 
 @media (min-width: 600px) {
   .heading {
-    width: 80%; } }
+    width: 80%; }
+  [data-inviewport="slide-in"] {
+    margin-left: 0; } }
 
 @media (min-width: 840px) {
+  [data-inviewport="slide-in"] {
+    margin-left: -1300px;
+    transition: 1s;
+    transition-delay: 500ms; }
   .glide {
     margin-top: 2rem; }
     .glide__arrow {
