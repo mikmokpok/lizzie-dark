@@ -56,7 +56,8 @@ body {
   opacity: 1; }
 
 [data-inviewport="slide-in"].is-inViewport {
-  margin-left: 0; }
+  margin-left: 0;
+  opacity: 1; }
 
 html {
   scroll-behavior: smooth; }
@@ -317,8 +318,9 @@ html {
 
 @media (min-width: 840px) {
   [data-inviewport="slide-in"] {
-    margin-left: -1300px;
+    margin-left: -1000px;
     transition: 1s;
+    opacity: 0;
     transition-delay: 500ms; }
   .glide {
     margin-top: 2rem; }

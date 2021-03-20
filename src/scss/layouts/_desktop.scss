@@ -8,8 +8,9 @@
 }
 @media (min-width: 840px) {
   [data-inviewport="slide-in"]{
-    margin-left:-1300px;
+    margin-left:-1000px;
     transition: 1s;
+    opacity:0;
     transition-delay: 500ms;
   }
   .glide {

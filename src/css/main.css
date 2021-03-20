@@ -84,6 +84,7 @@ body {
 
 [data-inviewport="slide-in"].is-inViewport {
   margin-left: 0;
+  opacity: 1;
 }
 
 html {
@@ -468,9 +469,10 @@ html {
 
 @media (min-width: 840px) {
   [data-inviewport="slide-in"] {
-    margin-left: -1300px;
+    margin-left: -1000px;
     -webkit-transition: 1s;
     transition: 1s;
+    opacity: 0;
     -webkit-transition-delay: 500ms;
             transition-delay: 500ms;
   }
