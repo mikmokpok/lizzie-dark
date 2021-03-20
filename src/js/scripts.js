@@ -71,8 +71,8 @@
       e.removeAttribute("data-inviewport");
       e.classList.add("is-inViewport");
     });
-  }
-  var io = new IntersectionObserver(
+  }/*
+  const io = new IntersectionObserver(
     entries => {
         console.log(entries[0]);
         if (entries[0].isIntersecting) {
@@ -84,7 +84,7 @@
     }
 );
 io.observe(document.querySelector('.contact__form'));
-
+*/
   lightGallery(document.getElementById('selector2'));
 
   lightGallery(document.getElementById('selector3'));
