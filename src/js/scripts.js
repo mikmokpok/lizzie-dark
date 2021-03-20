@@ -45,6 +45,8 @@
       perView: 3,
       gap: "10px",
     }).mount();
+
+    //Observers
     const inViewport = (entries, observer) => {
       entries.forEach((entry) => {
         entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
@@ -70,6 +72,19 @@
       e.classList.add("is-inViewport");
     });
   }
+  var io = new IntersectionObserver(
+    entries => {
+        console.log(entries[0]);
+        if (entries[0].isIntersecting) {
+            var recaptchaScript = document.createElement('script');
+            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
+            recaptchaScript.defer = true;
+            document.body.appendChild(recaptchaScript);
+        }
+    }
+);
+io.observe(document.querySelector('.contact__form'));
+
   lightGallery(document.getElementById('selector2'));
 
   lightGallery(document.getElementById('selector3'));
