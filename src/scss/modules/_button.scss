@@ -1,0 +1,14 @@
+.button{
+    padding:3rem 6rem;
+    font-size: 2em;
+    border-radius: 50px;
+    margin-top: 2rem;
+    color: $offwhite;
+    transition: .5s;
+    background: $redish;
+    &:hover{
+      transform: scale(1.1);
+      transition: .5s;
+      box-shadow: 3px 3px 5px black;
+    }
+  }

@@ -40,9 +40,11 @@
   menu.hidden = true;
 
   const mediaquery = window.matchMedia("(min-width: 840px)");
+  const last = document.getElementById("last");
   if (mediaquery.matches) {
     new Glide(".glide", {
       perView: 3,
+      bound: last,
       gap: "10px",
     }).mount();
 
