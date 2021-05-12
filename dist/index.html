@@ -22,8 +22,8 @@
       </div>
     </nav>
     <section class="hero" id="top">
-      <h1 class="hero__title">Lizzie Dark FCI</h1>
-      <h2 class="hero__sub">Hodowla buldogów francuskich</h2>
+      <h1 class="hero__title embelished">Lizzie Dark FCI</h1>
+      <h2 class="hero__sub sub">Hodowla buldogów francuskich</h2>
     </section>
     <section class="dogs" id="dogs">
       <h2 class="heading shift" data-inviewport="slide-in">
@@ -66,7 +66,7 @@
                   <li class="dogs__dog__description__l">Płeć: K</li>
                   <li class="dogs__dog__description__l">Kolor: plowy</li>
                   <li class="dogs__dog__description__l">
-                    Rezerwacja: <span class="green">Wolna</span>
+                    Rezerwacja: <span class="red">Sprzedana</span>
                   </li>
                 </ul>
               </div>
@@ -97,7 +97,7 @@
                 </ul>
               </div>
             </li>
-            <li class="glide__slide">
+            <li class="glide__slide" id="last">
               <div class="dogs__dog">
                 <img class="dogs__dog__image" src="img/6.jpg" alt="piesek" />
                 <p class="dogs__dog__name">Ali</p>
@@ -123,7 +123,7 @@
       </div>
       <div id="selector2">
         <a href="./img/gallery/1.jpg">
-          <button class="lightbox__show">Galeria</button>
+          <button class="lightbox__show button">Galeria</button>
         </a>
         <a href="./img/gallery/2.jpg">
         </a>
@@ -166,9 +166,10 @@
       <div class="lila__desc">
         <p class="left" data-inviewport="fade-in">
           <b> LILA OTTINO AMICO </b> urodziła się 11 lipca 2017 roku, waży 11 kg. Jej ojcem jest BISCO SOLI DEO GRATIA, a
-          matką BELLA CREATURA GRANTED DREAMS. Jest przyjaznym i rodzinnym pieskiem, bardzo lubi podróżować. Hodowla Lizzie Dark powstała w roku 2019. Lila jest pierwszym psem należącym do hodowli i mamy nadzieję, że nie ostatnim. Po więcej zdjęć Lili
-          <span id="selector3"><a href="./img/lila/1.jpg">
-            kliknij tutaj.
+          matką BELLA CREATURA GRANTED DREAMS. Jest przyjaznym i rodzinnym pieskiem, bardzo lubi podróżować. Hodowla Lizzie Dark powstała w roku 2019. Lila jest pierwszym psem należącym do hodowli i mamy nadzieję, że nie ostatnim.
+          <div id="selector3"><a href="./img/lila/1.jpg">
+            <button class="lightbox__show button">Zdjęcia Lili</button>
+          </a>
           </a>
           <a href="./img/lila/2.jpg">
           </a>
@@ -180,7 +181,7 @@
           </a>
           <a href="./img/lila/6.jpg">
           </a>     
-        </span>
+        </div>
         </p>
         <p class="right" data-inviewport="fade-in">
           <b>Pełne drzewo genealogiczne Lili oraz Macieja dostępne na portalu Ingrus:</b><br>
@@ -209,12 +210,14 @@
           required
         ></textarea>
         <div class="g-recaptcha" style="margin:auto;" data-sitekey="6LdZ3oMaAAAAAK5KAZZDR_ZoKsfMRdVqjvSoP3FC" aria-label="captcha"></div>
-        <button class="contact__form__input" type="submit" id="submit">Wyślij</button>
+        <button class="contact__form__input button" type="submit" id="submit">Wyślij</button>
       </form>
     </section>
     <footer class="footer">
-      <p class="footer__text">
-        Lizzie Dark FCI <br />
+      <p class="footer__title embelished">
+        Lizzie Dark FCI
+      </p>
+      <p class="footer__sub sub">
         Hodowla buldogów francuskich
       </p>
       <address class="footer__text">Zduńska Wola, ul. Kościelna 32</address>
